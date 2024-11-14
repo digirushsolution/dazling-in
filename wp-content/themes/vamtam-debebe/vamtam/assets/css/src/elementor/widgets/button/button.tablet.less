@@ -1,0 +1,12 @@
+// Button - Tablet.
+.elementor-widget-button {
+	// Base Theme Widget Styles.
+	&.vamtam-has-theme-widget-styles {
+		.elementor-button {
+			// Fix for Safari. Decreased bg transition time so the anim has enough time to complete, since Safari kills anims on redirect.
+			body.e--ua-safari & {
+				transition: all .1s ease;
+			}
+		}
+	}
+}
